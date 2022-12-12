@@ -3,14 +3,15 @@
 class Category {
 
   public $name = null;
-  private $icon = null;
+  protected $icon = null;
 
   
   /**
-   * @var String category name (cani, gatti, uccelli, pesci, roditori) 
+   * @param String category name (cani, gatti, uccelli, pesci, roditori) 
    */
   public function __construct($_name){
 
+    // a seconda del nome della categoria lancio la funzione che riconosce la categoria, formatta il nome secondo gli standard e assegna l'icona
     $this->set_category($_name); 
 
   }
