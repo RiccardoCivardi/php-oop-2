@@ -6,6 +6,15 @@ class Food extends Product {
   protected $taste = null;
   protected $ingredients;
 
+  /**
+   * @param Category product category
+   * @param String product name
+   * @param String brand name
+   * @param Number product price 
+   * @param Number product weight
+   * @param String food taste
+   * @param Array food ingredients
+   */
   public function __construct(Category $_category, $_name_product, $_brand, $_price, $_weight, $_taste, $_ingredients){
     
     parent::__construct($_category, $_name_product, $_brand, $_price);
