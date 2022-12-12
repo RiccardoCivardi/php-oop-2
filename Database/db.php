@@ -74,4 +74,4 @@ $list_product = [
   "toys" => $list_toy
 ];
 
-var_dump($list_product);
+// var_dump($list_product);

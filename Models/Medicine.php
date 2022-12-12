@@ -1,11 +1,12 @@
 <?php 
 
 class Medicine extends Product {
-
-  protected $use;
-  protected $ingredients;
-
+  
   public $type= 'Medicine';
+  
+  public $use;
+  public $ingredients;
+
 
   /**
    * @param Category product category

@@ -2,11 +2,12 @@
 
 class Toy extends Product {
 
-  protected $features = null;
+  public $type= 'Toy';
+
+  protected $feature = null;
   protected $toy_type = null;
   protected $size;
 
-  public $type= 'Toy';
 
   /**
    * @param Category product category
@@ -17,11 +18,11 @@ class Toy extends Product {
    * @param String toy type
    * @param String toy size (small, medium, big)
    */
-  public function __construct(Category $_category, $_name_product, $_brand, $_price, $_features, $_toy_type, $_size){
+  public function __construct(Category $_category, $_name_product, $_brand, $_price, $_feature, $_toy_type, $_size){
     
     parent::__construct($_category, $_name_product, $_brand, $_price);
 
-    $this->features = $_features;
+    $this->feature = $_feature;
     $this->toy_type = $_toy_type;
     $this->size = trim(strtolower($_size));
 
@@ -42,6 +43,13 @@ class Toy extends Product {
     if($this->size == 'big'){
       $this->discount += 5;
     }
+
+  }
+
+  // funzione che stampa le info
+  public function get_full_information(){
+
+    echo 'Caratteristiche: ' . $this->feature . ' | Tipo: ' . $this->toy_type . ' | Dimensioni: ' . $this->size; 
 
   }
 

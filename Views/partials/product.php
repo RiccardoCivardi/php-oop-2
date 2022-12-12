@@ -1,7 +1,15 @@
-<body>
-  
-  <main>
-    QUI STAMPO LE CARD DEI PRODOTTI
-  </main>
+    <main class="container-lg py-5">
 
-</body>
+    <?php 
+    
+    // importo categorie prodotti da visualizzare
+    require_once __DIR__ .'/food.php';
+    require_once __DIR__ .'/toy.php';
+    require_once __DIR__ .'/medicine.php';
+ 
+    ?>  
+    
+    </main>
+
+
+

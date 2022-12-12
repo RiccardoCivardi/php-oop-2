@@ -1,12 +1,13 @@
 <?php 
 
 class Food extends Product {
-
-  protected $weight = null;
-  protected $taste = null;
-  protected $ingredients;
-
+  
   public $type= 'Food';
+  
+  public $weight = null;
+  public $taste = null;
+  public $ingredients;
+
 
   /**
    * @param Category product category
@@ -38,6 +39,13 @@ class Food extends Product {
     if($brand == 'bubi pet'){
       $this->discount = 50;
     }
+
+  }
+
+  // funzione che stampa le info
+  public function get_full_information(){
+
+    echo 'Gusto: ' . $this->taste . ' | Peso: kg ' . $this->weight; 
 
   }
 }

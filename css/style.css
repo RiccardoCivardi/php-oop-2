@@ -1,0 +1,12 @@
+body {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.thumb {
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}

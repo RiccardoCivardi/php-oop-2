@@ -3,7 +3,7 @@
 class Category {
 
   public $name = null;
-  protected $icon = null;
+  public $icon = null;
 
   
   /**

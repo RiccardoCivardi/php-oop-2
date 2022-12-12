@@ -7,9 +7,9 @@ class Product {
   public $brand;
   public $price;
   protected $discount = 0;
-  protected $is_available = true;
+  public $is_available = true;
   protected $id;
-  protected $img = 'https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=';
+  public $img = 'https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=';
 
   /**
    * @param Category product category
