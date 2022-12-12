@@ -3,8 +3,10 @@
 class Toy extends Product {
 
   protected $features = null;
-  protected $type = null;
+  protected $toy_type = null;
   protected $size;
+
+  public $type= 'Toy';
 
   /**
    * @param Category product category
@@ -15,15 +17,15 @@ class Toy extends Product {
    * @param String toy type
    * @param String toy size (small, medium, big)
    */
-  public function __construct(Category $_category, $_name_product, $_brand, $_price, $_features, $_type, $_size){
+  public function __construct(Category $_category, $_name_product, $_brand, $_price, $_features, $_toy_type, $_size){
     
     parent::__construct($_category, $_name_product, $_brand, $_price);
 
     $this->features = $_features;
-    $this->type = $_type;
+    $this->toy_type = $_toy_type;
     $this->size = trim(strtolower($_size));
 
-    // richiamo set_discount di Food
+    // richiamo set_discount di Toy
     $this->set_discount($_brand, $_size);
 
   }

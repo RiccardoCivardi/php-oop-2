@@ -6,6 +6,8 @@ class Food extends Product {
   protected $taste = null;
   protected $ingredients;
 
+  public $type= 'Food';
+
   /**
    * @param Category product category
    * @param String product name
